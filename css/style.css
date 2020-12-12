@@ -1,0 +1,45 @@
+html, body, figure{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+figure {
+    display: block;
+}
+
+.grid_sys {
+  margin: 0;
+  display: grid;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.grid_sys > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+.grid_sys_all {
+  column-count: 4;
+  column-gap: 10px;
+}
+
+.grid_sys {
+    background: #fff;
+    padding: 5px;
+}
+.grid_sys figure img{
+    border-radius: 1.5rem;
+    border: 1px solid #dedede;
+}
+
+@media (max-width:768px) {
+    .grid_sys_all {
+        column-count: 2;
+    }
+}
